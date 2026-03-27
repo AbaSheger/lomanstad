@@ -1,16 +1,61 @@
-# React + Vite
+# Loman Städ – Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A professional cleaning company website built for **Loman Städ**, a Swedish cleaning service offering hemstädning, flyttstädning, storstädning, kontorsstädning, fönsterputsning, and trappstädning.
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Hero
+![Hero](screenshots/hero.png)
 
-## React Compiler
+### Services
+![Services](screenshots/services.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Contact Form
+![Contact](screenshots/contact.png)
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19** – UI
+- **Vite 8** – Build tool
+- **Tailwind CSS v4** – Styling
+- **EmailJS** – Contact form email delivery
+- **Sanity** – Headless CMS (studio in `/studio`)
+
+## Features
+
+- Fully responsive (mobile & desktop)
+- Smooth scroll navigation with active link highlighting
+- Service cards with expandable details (accordion)
+- Quote request form with validation and EmailJS integration
+- Cookie consent banner
+- GDPR privacy modal
+- Nöjd-Kund-Garanti section
+- Accessible (ARIA labels, focus rings, semantic HTML)
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## CMS (Sanity Studio)
+
+```bash
+cd studio
+npm install
+npm run dev
+```
+
+Studio runs at `http://localhost:3333`
+
+## Built By
+
+[Abenezer Anglo](https://abasheger.github.io/)
