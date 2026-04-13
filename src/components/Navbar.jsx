@@ -8,7 +8,7 @@ export default function Navbar() {
   const [activeSection, setActiveSection] = useState(null)
 
   useEffect(() => {
-    const sectionIds = ['hemstadning', 'flyttstadning', 'storstadning', 'kontorsstadning', 'fonsterputsning', 'trappstadning']
+    const sectionIds = ['hemstadning', 'flyttstadning', 'storstadning', 'kontorsstadning', 'fonsterputsning', 'trappstadning', 'prislista']
     const onScroll = () => {
       setScrolled(window.scrollY > 10)
       const threshold = window.innerHeight * 0.4
@@ -33,6 +33,7 @@ export default function Navbar() {
     { label: 'Kontorsstädning', href: '#kontorsstadning' },
     { label: 'Fönsterputsning', href: '#fonsterputsning' },
     { label: 'Trappstädning', href: '#trappstadning' },
+    { label: 'Prislista', href: '#prislista' },
   ]
 
   const scrollTo = (href) => {

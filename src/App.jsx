@@ -5,6 +5,7 @@ import Intro from './components/Intro'
 import Services from './components/Services'
 import CtaBanner from './components/CtaBanner'
 import WhyUs from './components/WhyUs'
+import Prislista from './components/Prislista'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import FloatingButtons from './components/FloatingButtons'
@@ -34,6 +35,7 @@ export default function App() {
         <Services />
         <CtaBanner />
         <WhyUs />
+        <Prislista />
         <Contact />
       </main>
 
