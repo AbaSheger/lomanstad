@@ -76,6 +76,7 @@ export default function ServiceCard({ service }) {
           onClick={() => setExpanded(!expanded)}
           aria-expanded={expanded}
           aria-controls={detailsId}
+          aria-label={expanded ? `Dölj detaljer för ${service.title}` : `Se vad som ingår för ${service.title}`}
           className={`mt-auto flex items-center justify-between w-full pt-3 text-sm font-semibold
                      text-[#1a7abf] border-t border-gray-100 hover:text-[#1568a3] transition-colors
                      min-h-[44px] group/btn ${focusRingDark}`}
