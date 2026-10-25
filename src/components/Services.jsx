@@ -1,7 +1,6 @@
-import { services } from '../data/services'
 import ServiceCard from './ServiceCard'
 
-export default function Services() {
+export default function Services({ services = [] }) {
   return (
     <section id="tjanster" aria-labelledby="services-heading" className="bg-[#f7f9fc] py-14 px-4">
       <div className="max-w-6xl mx-auto">
@@ -14,7 +13,7 @@ export default function Services() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((service) => (
-            <ServiceCard key={service.id} service={service} />
+            <ServiceCard key={service.id || service._id} service={service} />
           ))}
         </div>
       </div>

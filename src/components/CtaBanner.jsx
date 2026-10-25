@@ -1,12 +1,17 @@
 import { focusRing, focusRingDark } from '../constants'
 
-export default function CtaBanner() {
+export default function CtaBanner({ ctaBanner = {} }) {
+  const {
+    headline = 'Redo att boka?',
+    subtext = 'Vi svarar inom 24 timmar – utan bindningstid.',
+  } = ctaBanner
+
   return (
     <section aria-label="Kontakta oss" className="bg-[#1568a3] py-10 px-4">
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-6">
         <div>
-          <p className="text-white text-xl font-bold leading-snug">Redo att boka?</p>
-          <p className="text-gray-400 text-sm mt-1">Vi svarar inom 24 timmar – utan bindningstid.</p>
+          <p className="text-white text-xl font-bold leading-snug">{headline}</p>
+          <p className="text-gray-400 text-sm mt-1">{subtext}</p>
         </div>
         <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
           <a
